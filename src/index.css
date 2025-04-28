@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import "tailwindcss";
+
+body{
+
+  font-family: "Roboto", sans-serif;
+}
+
+/* Hero.css */
+.swiper-button-prev,
+.swiper-button-next {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 30px !important;
+  height: 30px !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 9999px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 14px !important;
+}
+
+/* 👇 Show buttons on hover */
+.swiper:hover .swiper-button-prev,
+.swiper:hover .swiper-button-next {
+  opacity: 1;
+}
+
+.custom-swiper .swiper-pagination-bullet {
+  background: #ccc; /* Default bullet color (light grey) */
+  opacity: 1;
+}
+
+.custom-swiper .swiper-pagination-bullet-active {
+  background: #019267; /* Active bullet color */
+}
+
+
+.partner-brands-carousel {
+  width: 100%;
+  padding: 20px;
+}
+
+.partner-brand-img {
+  width: 100%;
+  object-fit: contain;
+}
