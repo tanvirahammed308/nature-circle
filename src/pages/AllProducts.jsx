@@ -19,7 +19,7 @@ const AllProducts = () => {
 
  
   return (
-    <div className='w-full md:w-11/12 mx-auto mb-10 mt-8'>
+    <div className='w-full md:w-11/12 mx-auto mb-10 mt-10'>
       {/* banner */}
       <div className='bg-[#019267] py-3 px-10 rounded '>
         <h1 className='text-center text-white text-2xl'>All Products Category</h1>
@@ -38,7 +38,7 @@ const AllProducts = () => {
           {/* left */}
           <div className='flex flex-col w-full md:w-1/4 px-2'>
             <div className='shadow-2xl mt-3'>
-              <img src={banner2} alt="" className='h-[500px]'/>
+              <img src={banner2} alt="" className='h-[500px] '/>
             </div>
             <div className='shadow-2xl mt-10'>
               <h2 className='text-[#019267] text-center'>Home Delivery is available</h2>
@@ -48,9 +48,9 @@ const AllProducts = () => {
 
           </div>
 {/* right */}
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-5 w-[300px] md:w-3/4 mx-auto md:px-3'>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-5 w-[300px] md:w-3/4 mx-auto md:px-3 mt-5'>
             {
-              selectedCat.map((item)=> <div className="flex flex-col p-4 bg-white rounded-xl shadow-md h-[450px] mt-2 relative">
+              selectedCat.map((item)=> <div className="flex flex-col p-4 bg-white rounded-xl shadow-md w-full md:w-[270px] h-[450px] mt-2 relative">
                        
                        {/* Image part (fixed height) */}
                        <div className="flex justify-center items-center h-36">
@@ -58,7 +58,7 @@ const AllProducts = () => {
                        </div>
               
                        {/* discount */}
-                       <div className='absolute top-0 right-0 px-4 text-red-400 py-3'>
+                       <div className='absolute top-3 right-3 p-2 text-white bg-[#019267] rounded text-sm'>
                           {item.discountPercentage}%
                        </div>
                    

@@ -12,7 +12,7 @@ const ProductsDetails = () => {
     const [data]=useDataStore();
    const filteredData=data.find((item)=>item.id == id)
 
-   const relatedProducts=data.filter((item)=>item.category ==filteredData.category && item.id !==id)
+   const relatedProducts=data.filter((item)=>item.category ==filteredData.category && item.id !=id)
 
    if(!filteredData){
     return <div>loading...</div>
@@ -72,9 +72,9 @@ Feel free to reach out to us, and we’ll get back to you as soon as possible. W
         {/* related products */}
         <div className='space-y-3 mt-5'>
             <h1 className='text-xl font-semibold text-gray-800 '>Our Related Products</h1>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
+            <div className='grid grid-cols-1 md:grid-cols-4 gap-5'>
                 {
-                    relatedProducts.map((item)=><div className="flex flex-col p-4 bg-white rounded-xl shadow-md h-[450px] mt-2 relative">
+                    relatedProducts.map((item)=><div className="flex flex-col p-4 bg-white rounded-xl shadow-md w-full md:w-[250px] h-[450px] mt-2 relative">
                        
                     {/* Image part (fixed height) */}
                     <div className="flex justify-center items-center h-36">
@@ -82,7 +82,7 @@ Feel free to reach out to us, and we’ll get back to you as soon as possible. W
                     </div>
            
                     {/* discount */}
-                    <div className='absolute top-0 right-0 px-4 text-red-400 py-3'>
+                    <div className='absolute top-3 right-3 p-2 text-white bg-[#019267] rounded text-sm'>
                        {item.discountPercentage}%
                     </div>
                 
