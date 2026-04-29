@@ -1,12 +1,90 @@
-# React + Vite
+# 🌿 Nature Circle - Explore Nature
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📌 Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Nature Circle is a modern web application focused on showcasing the beauty of nature. Users can explore different natural places, view stunning visuals, and enjoy a clean, responsive user interface.
+
+---
+
+
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React.js (v19)
+* React Router DOM (v7)
+* Tailwind CSS (v4)
+
+### UI & Components
+
+* Swiper (for sliders)
+* React Icons
+
+### Build Tool
+
+* Vite
+
+---
+
+## ✨ Key Features
+
+* 🌿 Nature exploration interface
+* 🎞️ Image sliders with Swiper
+* 📱 Fully responsive design
+* ⚡ Fast performance with Vite
+* 🧭 Smooth navigation using React Router
+
+---
+
+## 📦 Dependencies
+
+Main dependencies used:
+
+* react
+* react-dom
+* react-router-dom
+* tailwindcss
+* swiper
+* react-icons
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+
+```bash id="9xq8rj"
+git clone https://github.com/yourusername/nature-circle.git
+```
+
+### 2️⃣ Navigate to the project folder
+
+```bash id="6r9q9t"
+cd nature-circle
+```
+
+### 3️⃣ Install dependencies
+
+```bash id="7jzv2c"
+npm install
+```
+
+### 4️⃣ Run the project
+
+```bash id="l3e1m5"
+npm run dev
+```
+
+---
+
+
+
+## 👨‍💻 Author
+
+Md Tanvir Ahammed
+Frontend Developer | MERN Stack Developer
